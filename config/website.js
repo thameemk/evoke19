@@ -5,7 +5,7 @@ module.exports = {
 
   siteTitle: 'Evoke19', // Navigation and Site Title
   siteTitleAlt: 'Evoke', // Alternative Site title for SEO
-  siteUrl: 'https://portfolio-cara.netlify.com', // Domain of your site. No trailing slash!
+  siteUrl: 'https://evoke19.herokuapp.com/', // Domain of your site. No trailing slash!
   siteLanguage: 'en', // Language Tag on <html> element
   siteLogo: '/logos/logo-1024.png', // Used for SEO and manifest
   siteDescription: 'The official site for all things Evoke19',
