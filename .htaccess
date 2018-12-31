@@ -1,0 +1,10 @@
+RewriteCond %{HTTP_HOST} ^(http\:\/\/)?(www\.)?evoke19\.com$ [NC]
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*) https://www.evoke19.com/$1 [L,R]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php/$1 [L]
+
+DirectoryIndex index.php index.html index2.html
+</IfModule>
