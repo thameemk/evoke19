@@ -56,7 +56,6 @@
 .card__container--closed .card__content {
 	margin-top: 0;
 	padding: 5px 16px;
-	pointer-events: none;
 	background: transparent;
 }
 

@@ -13,8 +13,10 @@
 	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
 	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.3.0/css/font-awesome.min.css" />
 	<link rel="stylesheet" type="text/css" href="css/demo.css" />
-	<link rel="stylesheet" type="text/css" href="css/card.css" />
+	<!--link rel="stylesheet" type="text/css" href="css/card.css" /-->
 	<link rel="stylesheet" type="text/css" href="css/pattern.css" />
+	<link rel="stylesheet" type="text/css" href="css/material-kit.min.css" />
+
 	
 	<script>
 		if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
@@ -28,266 +30,206 @@
 	<iframe src="../bg/index.html" class="main-frame" frameborder="0"></iframe>
 	<div class="container">
 		<header class="codrops-header">
-			<h1> Events</h1>
+			<h1 color="white"> Events</h1>
 		</header>
 		<div class="content">
 			<!-- trianglify pattern container -->
 			<div class="pattern pattern--hidden"></div>
 			<!-- cards -->
 			<div class="wrapper">
-				
-				<div class="card">
-					<div class="card__container card__container--closed">
-						<svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500"
-						 preserveAspectRatio="xMidYMid slice">
-							<defs>
-								<clipPath id="clipPath1">
-									<polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
-								</clipPath>
-							</defs>
-							<image clip-path="url(#clipPath1)" width="1920" height="500" xlink:href="img/DRONE.jpg"></image>
-						</svg>
-						<div class="card__content">
-							<i class="card__btn-close fa fa-times"></i>
-							
-							<div class="card__copy">
-								<div class="meta">
-									<span class="meta__date">12-13 October</span>
-								</div>
-								<p>We’ve all had experiences of slogging for hours and days on those design projects. Some of those might be
-									creations we look back fondly towards. Here is an opportunity to redisplay your favourite housing designs.
-									This competition lets you to reuse those designs and showcase your ideas in front of a whole new diverse
-									audience and present them before a different panel of critics. So brush up on those sheets in and suit up,
-									your design gets to relive here.</p>
-							</div>
-							<a href="details/expo-de-casa.pdf" target="_blank">
-								<div class="details_btn">
-									<h3>details</h3>
-								</div>
-							</a>
-							<a href="http://tathva.org/2018/tathva/event/17001/register?redir=http://adizya.tathva.org/events" target="_blank"
-							 onclick="alert('Please Login to Tathva 18 before registering.');">
-								<div class="details_btn register">
-									<h3>Register</h3>
-								</div>
-							</a>
-						</div>
+				<div class="card" style="width: 20rem" data-toggle="modal" data-target="#exampleModal1">
+					<div class="card-header card-header-warning" style="padding: 0px;">
+						<img src="img/DRONE.jpg" class="card-img-top" />
+					</div>
+					<div class="card-body">
+						<h4 class="card-title">Drawn Show (DRK)</h4>
+    					
 					</div>
 				</div>
-				<div class="card">
-					<div class="card__container card__container--closed">
-						<svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500"
-						 preserveAspectRatio="xMidYMid slice">
-							<defs>
-								<clipPath id="clipPath2">
-									<polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
-								</clipPath>
-							</defs>
-							<image clip-path="url(#clipPath2)" width="1920" height="500" xlink:href="img/STARTUP.jpg"></image>
-						</svg>
-						<div class="card__content">
-							<i class="card__btn-close fa fa-times"></i>
-							
-							<div class="card__copy">
-								<div class="meta">
-									<span class="meta__date">12-13 October</span>
-								</div>
-								<p>A unique space mission unparalleled in its novelty, modernity, and brilliance: a selected few have taken on
-									the
-									challenge to voyage the distant reaches of space - Not to study it, but to be the first extraterrestrial human
-									inhabitants. Your mission, should you choose to accept it, is to be the privileged designer for the Earths
-									best team:
-									you are to design the furniture the team will use during their stay in the foreign planet. Advance with
-									intellect and
-									creativity as you strive to be the best the Earth has to offer.</p>
-							</div>
-							<a href="details/eclectic.pdf" target="_blank">
-								<div class="details_btn">
-									<h3>details</h3>
-								</div>
-							</a>
-							<a href="http://tathva.org/2018/tathva/event/17002/register?redir=http://adizya.tathva.org/events" target="_blank"
-							 onclick="alert('Please Login to Tathva 18 before registering.');">
-								<div class="details_btn register">
-									<h3>Register</h3>
-								</div>
-							</a>
-						</div>
+				<div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">Drawn Show (DRK)</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						
+                    <p class="about_evoke">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-primary">Register</button>
+					</div>
 					</div>
 				</div>
-				<div class="card">
-					<div class="card__container card__container--closed">
-						<svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500"
-						 preserveAspectRatio="xMidYMid slice">
-							<defs>
-								<clipPath id="clipPath3">
-									<polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
-								</clipPath>
-							</defs>
-							<image clip-path="url(#clipPath3)" width="1920" height="500" xlink:href="img/that.jpg"></image>
-						</svg>
-						<div class="card__content">
-							<i class="card__btn-close fa fa-times"></i>
-							<div class="card__caption">
-								<h2 class="card__title">Maker Fair</h2>
-							</div>
-							<div class="card__copy">
-								<div class="meta">
-									<span class="meta__date">12-13 October</span>
-								</div>
-								<p>Supers have become legal again. Elastigirl busy with her new assignment,Mr Incredible gets a tough time
-									looking
-									after the multipowred toddler Jack-Jack . Donned with the task of designing a playroom and training space for
-									Jack-Jack,that functions according to his powers yet protects their most dangerous secret, how will you tackle
-									it?</p>
-							</div>
-							<a href="details/thats-my-spot.pdf" target="_blank">
-								<div class="details_btn">
-									<h3>details</h3>
-								</div>
-							</a>
-							<a href="http://tathva.org/2018/tathva/event/17003/register?redir=http://adizya.tathva.org/events" target="_blank"
-							 onclick="alert('Please Login to Tathva 18 before registering.');">
-								<div class="details_btn register">
-									<h3>Register</h3>
-								</div>
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="card">
-					<div class="card__container card__container--closed">
-						<svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500"
-						 preserveAspectRatio="xMidYMid slice">
-							<defs>
-								<clipPath id="clipPath4">
-									<polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
-								</clipPath>
-							</defs>
-							<image clip-path="url(#clipPath4)" width="1920" height="500" xlink:href="img/GALA.jpg"></image>
-						</svg>
-						<div class="card__content">
-							<i class="card__btn-close fa fa-times"></i>
-							
-							<div class="card__copy">
-								<div class="meta">
-									<span class="meta__date">12-13 October</span>
-								</div>
-								<p>Perception.Misdirection.To show only what needs to be seen.That is what this event is all about.Your job is
-									to make a hideout
-									that is fit for any criminal to hide.And no one should be wiser.So bring out the criminal in you and design
-									the perfect hideout
-									that'll make a fool out of any cops or agents that may be behind you.</p>
-							</div>
-							<a href="details/break-the-rules.pdf" target="_blank">
-								<div class="details_btn">
-									<h3>details</h3>
-								</div>
-							</a>
-							<a href="http://tathva.org/2018/tathva/event/17004/register?redir=http://adizya.tathva.org/events" target="_blank"
-							 onclick="alert('Please Login to Tathva 18 before registering.');">
-								<div class="details_btn register">
-									<h3>Register</h3>
-								</div>
-							</a>
-						</div>
-					</div>
-				</div>
-					<div class="card">
-					<div class="card__container card__container--closed">
-						<svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500"
-						 preserveAspectRatio="xMidYMid slice">
-							<defs>
-								<clipPath id="clipPath3">
-									<polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
-								</clipPath>
-							</defs>
-							<image clip-path="url(#clipPath3)" width="1920" height="500" xlink:href="img/that.jpg"></image>
-						</svg>
-						<div class="card__content">
-							<i class="card__btn-close fa fa-times"></i>
-							<div class="card__caption">
-								<h2 class="card__title">Community meetup</h2>
-							</div>
-							<div class="card__copy">
-								<div class="meta">
-									<span class="meta__date">12-13 October</span>
-								</div>
-								<p>Supers have become legal again. Elastigirl busy with her new assignment,Mr Incredible gets a tough time
-									looking
-									after the multipowred toddler Jack-Jack . Donned with the task of designing a playroom and training space for
-									Jack-Jack,that functions according to his powers yet protects their most dangerous secret, how will you tackle
-									it?</p>
-							</div>
-							<a href="details/thats-my-spot.pdf" target="_blank">
-								<div class="details_btn">
-									<h3>details</h3>
-								</div>
-							</a>
-							<a href="http://tathva.org/2018/tathva/event/17003/register?redir=http://adizya.tathva.org/events" target="_blank"
-							 onclick="alert('Please Login to Tathva 18 before registering.');">
-								<div class="details_btn register">
-									<h3>Register</h3>
-								</div>
-							</a>
-						</div>
-					</div>
-				</div>
-					<div class="card">
-					<div class="card__container card__container--closed">
-						<svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500"
-						 preserveAspectRatio="xMidYMid slice">
-							<defs>
-								<clipPath id="clipPath3">
-									<polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
-								</clipPath>
-							</defs>
-							<image clip-path="url(#clipPath3)" width="1920" height="500" xlink:href="img/that.jpg"></image>
-						</svg>
-						<div class="card__content">
-							<i class="card__btn-close fa fa-times"></i>
-							<div class="card__caption">
-								<h2 class="card__title">VR Treasure hunt</h2>
-							</div>
-							<div class="card__copy">
-								<div class="meta">
-									<span class="meta__date">12-13 October</span>
-								</div>
-								<p>Supers have become legal again. Elastigirl busy with her new assignment,Mr Incredible gets a tough time
-									looking
-									after the multipowred toddler Jack-Jack . Donned with the task of designing a playroom and training space for
-									Jack-Jack,that functions according to his powers yet protects their most dangerous secret, how will you tackle
-									it?</p>
-							</div>
-							<a href="details/thats-my-spot.pdf" target="_blank">
-								<div class="details_btn">
-									<h3>details</h3>
-								</div>
-							</a>
-							<a href="http://tathva.org/2018/tathva/event/17003/register?redir=http://adizya.tathva.org/events" target="_blank"
-							 onclick="alert('Please Login to Tathva 18 before registering.');">
-								<div class="details_btn register">
-									<h3>Register</h3>
-								</div>
-							</a>
-						</div>
-					</div>
 				</div>
 			</div>
-			<!-- /cards -->
-		</div><!-- /content -->
-		
+			<div class="wrapper">
+				<div class="card" style="width: 20rem" data-toggle="modal" data-target="#exampleModal2">
+					<div class="card-header card-header-warning" style="padding: 0px;">
+						<img src="img/STARTUP.jpg" class="card-img-top" />
+					</div>
+					<div class="card-body">
+						<h4 class="card-title">Startup Expo</h4>
+    					
+					</div>
+				</div>
+				<div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">Startup Expo</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						
+                    <p class="about_evoke">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-primary">Register</button>
+					</div>
+					</div>
+				</div>
+				</div>
+			</div>
+			<div class="wrapper">
+				<div class="card" style="width: 20rem" data-toggle="modal" data-target="#exampleModal3">
+					<div class="card-header card-header-warning" style="padding: 0px;">
+						<img src="img/MAKER.jpg" class="card-img-top" />
+					</div>
+					<div class="card-body">
+						<h4 class="card-title">Maker Fair</h4>
+    					
+					</div>
+				</div>
+				<div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">Maker Fair</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						
+                    <p class="about_evoke">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-primary">Register</button>
+					</div>
+					</div>
+				</div>
+				</div>
+			</div>
+
+
+			<div class="wrapper">
+				<div class="card" style="width: 20rem" data-toggle="modal" data-target="#exampleModal4">
+					<div class="card-header card-header-warning" style="padding: 0px;">
+						<img src="img/GALA.jpg" class="card-img-top" />
+					</div>
+					<div class="card-body">
+						<h4 class="card-title">Gala Dinner</h4>
+    					
+					</div>
+				</div>
+				<div class="modal fade" id="exampleModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">Gala Dinner</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						
+                    <p class="about_evoke">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-primary">Register</button>
+					</div>
+					</div>
+				</div>
+				</div>
+			</div>
+			<div class="wrapper">
+				<div class="card" style="width: 20rem" data-toggle="modal" data-target="#exampleModal5">
+					<div class="card-header card-header-warning" style="padding: 0px;">
+						<img src="img/COMMUNITY.jpg" class="card-img-top" />
+					</div>
+					<div class="card-body">
+						<h4 class="card-title">Community Meetup</h4>
+    					
+					</div>
+				</div>
+				<div class="modal fade" id="exampleModal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">Community Meetup</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						
+                    <p class="about_evoke">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-primary">Register</button>
+					</div>
+					</div>
+				</div>
+				</div>
+			</div>
+			<div class="wrapper">
+				<div class="card" style="width: 20rem" data-toggle="modal" data-target="#exampleModal6">
+					<div class="card-header card-header-warning" style="padding: 0px;">
+						<img src="img/VR.jpg" class="card-img-top" />
+					</div>
+					<div class="card-body">
+						<h4 class="card-title">VR Treasure hunt</h4>
+    					
+					</div>
+				</div>
+				<div class="modal fade" id="exampleModal6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">VR Treasure hunt</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						
+                    <p class="about_evoke">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-primary">Register</button>
+					</div>
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>		
 	</div>
-	<!-- /container -->
-	<!-- JS -->
-	<script src="js/vendors/trianglify.min.js"></script>
-	<script src="js/vendors/TweenMax.min.js"></script>
-	<script src="js/vendors/ScrollToPlugin.min.js"></script>
-	<script src="js/vendors/cash.min.js"></script>
-	<script src="js/Card-polygon.js"></script>
-	<script src="js/demo-2.js"></script>
+
+	<script src="js/core/jquery.min.js" type="text/javascript"></script>
+	<script src="js/core/popper.min.js" type="text/javascript"></script>
+	<script src="js/core/bootstrap-material-design.min.js" type="text/javascript"></script>
+	<script src="js/core/moment.min.js"></script>
 </body>
-
-
-
 </html>
