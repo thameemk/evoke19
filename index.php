@@ -59,20 +59,23 @@ In the present era where the rising concern regarding environmental protection a
                     <div class="contact_wrapper">
                         <div class="mobile_col">
                             <div class="contact_card">
+                                <center>
                                 <img src="contact/neethu.jpg" alt="">
-
-                                <h2>Neethu EV</h2>
-                                <p>CEO IEDC TKMCE</p>
-                                <p>95446 95845</p>
                                 
+                                <h3>Neethu EV</h3>
+                                <h3>CEO IEDC TKMCE</h3>
+                                <h3>95446 95845</h3>
+                                </center>
                             </div>
                             <div class="contact_card">
+                                <center>
+
                                 <img src="contact/harry.jpg" alt="">
 
-                                <h2>Harry Paul</h4>
-                                    <p>Chairman IEEE SB TKMCE</p>
-                                    <p>94977 04887</p>
-                                    
+                                <h3>Harry Paul</h3>
+                                    <h3>Chairman IEEE SB TKMCE</h3>
+                                    <h3>94977 04887</h3>
+                                </center>    
                             </div>
                         </div>
                         

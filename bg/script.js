@@ -25,7 +25,7 @@ startGUI();
 
 function getWebGLContext(canvas) {
     const params = {
-        alpha: false,
+        alpha: true,
         depth: false,
         stencil: false,
         antialias: false
@@ -226,6 +226,7 @@ const clearShader = compileShader(gl.FRAGMENT_SHADER, `
 `);
 
 const displayShader = compileShader(gl.FRAGMENT_SHADER, `
+
     precision highp float;
     precision mediump sampler2D;
 
@@ -233,7 +234,10 @@ const displayShader = compileShader(gl.FRAGMENT_SHADER, `
     uniform sampler2D uTexture;
 
     void main () {
-        gl_FragColor = texture2D(uTexture, vUv);
+
+        vec3 c = texture2D(uTexture, vUv).rgb;
+        float a= (c.r + c.g + c.b) / 3.0;
+        gl_FragColor = vec4(c, a);
     }
 `);
 
@@ -628,6 +632,7 @@ function splat(x, y, dx, dy, color) {
     velocity.swap();
 
     gl.uniform1i(splatProgram.uniforms.uTarget, density.read[2]);
+    gl.blendFunc(gl.ONE, gl.ONE_MINUS_SRC_ALPHA);
     gl.uniform3f(splatProgram.uniforms.color, color[0] * 0.3, color[1] * 0.3, color[2] * 0.3);
     blit(density.write[1]);
     density.swap();

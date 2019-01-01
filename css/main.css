@@ -21,7 +21,7 @@ body {
     width: 100vw;
     font-family: 'Roboto', sans-serif;
     color: #fff;
-    background: #000000;
+    
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     overflow: hidden;
@@ -29,6 +29,10 @@ body {
 
 p {
     margin: 20px 0;
+    color: #000000;
+}
+h1 {
+    color: #000000;
 }
 
 main {
@@ -52,6 +56,7 @@ a {
     color: #fff;
     outline: none;
     cursor: pointer;
+    color: #000000;
 }
 
 a:hover {
