@@ -84,9 +84,12 @@ a:focus {
 	height: 0;
 	pointer-events: none;
 }
+/* anchor absolute header to container */
+.container {
+	position: relative;
+}
 
 /* Header */
-
 .codrops-header {
 	position: absolute;
 	width: 100%;
@@ -186,6 +189,9 @@ a:focus {
 
 .content {
 	padding: 10em 0 4em;
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
 }
 
 /* Related demos */
@@ -225,8 +231,6 @@ a:focus {
 
 .wrapper {
 	overflow: auto;
-	width: 95%;
-	max-width: 1366px;
 	margin: 0 auto;
 }
 
