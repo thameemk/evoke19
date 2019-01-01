@@ -344,7 +344,7 @@ a:focus {
 
 @media screen and (max-width:50em) {
     .hero_logo img {
-        width: 80px;
+        width: 300px;
     }
 
     .hero_logo h2 {
