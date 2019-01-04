@@ -32,12 +32,12 @@
 
     <div class="menu-overlay">
         <div class="social_nav">
-            <a class="social_icon" href="#" target="_blank"><img src="img/social_icons/facebook.svg"
+            <a class="social_icon" href="https://www.facebook.com/evoke2k19/" target="_blank"><img src="img/social_icons/facebook.svg"
                     alt=""></a>
-            <a class="social_icon" href="#" target="_blank"><img src="img/social_icons/instagram.svg"
+            <a class="social_icon" href="https://instagram.com/evoke2k19?utm_source=ig_profile_share&igshid=kzbflp5n0u6q" target="_blank"><img src="img/social_icons/instagram.svg"
                     alt=""></a>
-            <a class="social_icon" href="#" target="_blank"><img src="img/social_icons/youtube.svg"
-                    alt=""></a>
+            <!-- <a class="social_icon" href="#" target="_blank"><img src="img/social_icons/youtube.svg"
+                    alt=""></a> -->
 
         </div>
         <a href="index.html">Home</a>
@@ -60,7 +60,7 @@ In the present era where the rising concern regarding environmental protection a
                         <div class="mobile_col">
                             <div class="contact_card">
                                 <center>
-                                <img src="contact/neethu.jpg" alt="">
+                                <!-- <img src="contact/neethu.jpg" alt=""> -->
                                 
                                 <h3>Neethu EV</h3>
                                 <h3>CEO IEDC TKMCE</h3>
@@ -70,7 +70,7 @@ In the present era where the rising concern regarding environmental protection a
                             <div class="contact_card">
                                 <center>
 
-                                <img src="contact/harry.jpg" alt="">
+                                <!-- <img src="contact/harry.jpg" alt=""> -->
 
                                 <h3>Harry Paul</h3>
                                     <h3>Chairman IEEE SB TKMCE</h3>
@@ -96,6 +96,7 @@ In the present era where the rising concern regarding environmental protection a
                 <p>o</p>
                 <p>k</p>
                 <p>e</p>
+                <p>'</p>
                 <p>1</p>
                 <p>9</p>
             </h2>
