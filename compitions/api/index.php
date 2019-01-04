@@ -15,7 +15,7 @@ $conn = mysqli_connect($host,$username,$password,$dbase);
 //Redirecting function after exec
 
 function redirect_path($theme,$response,$type=NULL){
-    $pathToFile='https://www.exuro.net/compitions/api/abstract/';
+    $pathToFile='https://www.exuro.net/compitions/';
     if($theme=='paper_1'){
         $page='paper_present.php';
     }
