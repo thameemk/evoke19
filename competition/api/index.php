@@ -8,6 +8,9 @@ $username='iedctkmc_evokeUR';
 $password='Ev0k#2k19';
 $dbase='iedctkmc_evokeDB';
 
+
+
+
 //Establishing database connection
 
 $conn = mysqli_connect($host,$username,$password,$dbase);
@@ -95,10 +98,10 @@ if($conn){
             }
             else if($valid_result==1){
                 $sql="SELECT * FROM userinfo WHERE emailid='$emailLeader' AND theme='$theme'";
-                if(mysqli_num_rows(mysqli_query($con,$sql))==0){                
+                if(mysqli_num_rows(mysqli_query($conn,$sql))==0){                
                     if(move_uploaded_file($_FILES['abstractForm']['tmp_name'],'abstract/'.$emailLeader.$theme.'.'.strtolower(pathinfo(basename($_FILES["abstractForm"]["name"]),PATHINFO_EXTENSION)))){
                         
-                        $theRealFileName = 'https://www.exuro.net/compitions/api/abstract/'.$emailLeader.$theme.'.'.strtolower(pathinfo(basename($_FILES["abstractForm"]["name"]),PATHINFO_EXTENSION));
+                        $theRealFileName = 'https://www.evoke19.com/competition/api/abstract/'.$emailLeader.$theme.'.'.strtolower(pathinfo(basename($_FILES["abstractForm"]["name"]),PATHINFO_EXTENSION));
                         
                         $sql="insert into userinfo (fullname,institution, emailid, contactnum, theme, pathtofile) values('$leaderName','$instNameLeader','$emailLeader','$contactLeader','$theme','$theRealFileName')";
                         $result=$conn->query($sql);
