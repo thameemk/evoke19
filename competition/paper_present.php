@@ -4,7 +4,7 @@
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Compitions | Evoke 19</title>
+	<title>Submit paper | Evoke 19</title>
 	
 	<link rel="shortcut icon" href="favicon.ico">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
@@ -49,7 +49,7 @@
                                 if(isset($_GET['response'])){
                                     $response=$_GET['response'];
                                     if($response=='success'){
-                                        print('<div class="form-control response success">Successfully registered for Evoke 19</div>');
+                                        print('<div class="form-control response success">Successfully registered </div>');
                                     }
                                     else{
                                         $type=$_GET['type'];
