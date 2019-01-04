@@ -146,38 +146,38 @@ if($conn){
                                     mysqli_query($conn,$sql);
 
                                     echo "already exists";
-                                    //redirect_path($theme,'error','already_exists');
+                                    redirect_path($theme,'error','already_exists');
                                 }
                             }
                             else{
                                 echo "no result for select";
-                                //redirect_path($theme,'error','error_conn');
+                                redirect_path($theme,'error','error_conn');
                             }
                         }
                         else echo "no result for insert";
                     }
                     else{
                         echo "wrong file";
-                        //redirect_path($theme,'error','error_file_upload');
+                        redirect_path($theme,'error','error_file_upload');
                     }
                 }
                 else{
                     echo "already exists";
-                    //redirect_path($theme,'error','already_exists');
+                    redirect_path($theme,'error','already_exists');
                 }
             }
             else{
                 echo "invalid result";
-                //redirect_path('home','error');
+                redirect_path('home','error');
             }
         }
     }
     else{
         echo "form is not set";
-        //redirect_path($theme,'error');
+        redirect_path($theme,'error');
     }
 }
 else{
     echo "connection failed";
-    //redirect_path($theme,'error','error_conn');
+    redirect_path($theme,'error','error_conn');
 }
