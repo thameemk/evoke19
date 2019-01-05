@@ -129,6 +129,7 @@ if($conn){
                                             if(!empty($fullNameMember3) and !empty($instNameMember3)){
                                                 $sql="insert into userinfo (fullname,institution, emailid, contactnum1, leaderid,theme, pathtofile) values('$fullNameMember3','$instNameMember3','$emailLeader','$contactLeader',$userid, '$theme', '$theRealFileName')";
                                                 $result=$conn->query($sql);
+                                                redirect_path($theme,'success');
                                             }
                                             else{
                                                 redirect_path($theme,'success');
