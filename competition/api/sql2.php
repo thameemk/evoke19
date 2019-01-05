@@ -18,7 +18,7 @@ if($conn){
     if($res){
         echo'
         <table class="userinfo">
-            <tr>
+            <tr><th>User ID </th>
                 <th>Full Name</th>
                 <th>Institution</th>
                 <th>Email-id</th>
@@ -28,7 +28,7 @@ if($conn){
             </tr>';
         while($row = $res->fetch_assoc()){
             echo '
-                <tr>
+                <tr><td>';echo $row['userid'];echo '</td>
                     <td>';echo $row['fullname'];echo '</td>
                     <td>';echo $row['institution'];echo '</td>
                     <td>';echo $row['emailid'];echo '</td>
