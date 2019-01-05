@@ -72,6 +72,7 @@ if($conn){
         $instNameLeader = mysqli_real_escape_string($conn,$_POST['instNameLeader']);
         $emailLeader = mysqli_real_escape_string($conn,$_POST['emailLeader']);
         $contactLeader = mysqli_real_escape_string($conn,$_POST['contactLeader']);
+        echo $contactLeader;
         $fullNameMember1 = mysqli_real_escape_string($conn,$_POST['fullNameMember1']);
         $instNameMember1 = mysqli_real_escape_string($conn,$_POST['instNameMember1']);
         // $emailNameMember1 = mysqli_real_escape_string($conn,$_POST['emailNameMember1']);
