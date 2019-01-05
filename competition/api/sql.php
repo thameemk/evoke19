@@ -5,7 +5,7 @@ $sql = "CREATE TABLE userinfo (
     fullname VARCHAR(50),
     institution VARCHAR(150),
     emailid VARCHAR(50),
-    contactnum1 INT(20),
+    contactnum1 VARCHAR(100),
     pathtofile TEXT,
     leaderid INT(255),
     theme VARCHAR(50),
