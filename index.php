@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Evoke 19</title>
+    <title>Evoke '19</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
    
@@ -40,7 +40,7 @@
                     alt=""></a> -->
 
         </div>
-        <a href="index.html">Home</a>
+        <a href="index.php">Home</a>
         <a id="about">About Us</a>
        
         <a id="contact">Contact Us</a>
