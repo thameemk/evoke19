@@ -32,26 +32,28 @@
 
     <div class="menu-overlay">
         <div class="social_nav">
-            <a class="social_icon" href="https://www.facebook.com/evoke2k19/" target="_blank"><img src="img/social_icons/facebook.svg"
+            <a class="social_icon" href="https://www.facebook.com/evoke19/" target="_blank"><img src="img/social_icons/facebook.svg"
                     alt=""></a>
-            <a class="social_icon" href="https://instagram.com/evoke2k19?utm_source=ig_profile_share&igshid=kzbflp5n0u6q" target="_blank"><img src="img/social_icons/instagram.svg"
+            <a class="social_icon" href="https://instagram.com/evoke_19" target="_blank"><img src="img/social_icons/instagram.svg"
                     alt=""></a>
             <!-- <a class="social_icon" href="#" target="_blank"><img src="img/social_icons/youtube.svg"
                     alt=""></a> -->
-
+            
+            
+    
         </div>
         <a href="index.php">Home</a>
         <a id="about">About Us</a>
        
         <a id="contact">Contact Us</a>
-         <!-- <a id="credit">Credits</a> -->
+
+         
         <div class="overlay_content">
             <div class="about">
                 <div class="container">
                     <p class="about_evoke"><h3>TKM College of Engineering, Kollam, Kerala presents <font style="font-weight: bold;">'EVOKE 2019: The dawn of green intelligence,</font> conducted by IEDC and IEEE TKMCE.
-In the present era where the rising concern regarding environmental protection and the need for smart technologies explosively overlap, EVOKE 19 brings out the technical rich minds to the stage.</h3>
+In the present era where the rising concern regarding environmental protection and the need for smart technologies explosively overlap, EVOKE'19 brings out the technical rich minds to the stage.</h3>
                     </p>
-                    <p class="about_evoke"><!-- Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. --> </p>
                 </div>
             </div>
             <div class="contact">
@@ -78,11 +80,12 @@ In the present era where the rising concern regarding environmental protection a
                                 </center>    
                             </div>
                         </div>
-                        
                     </div>
-                    <a href="mailto:evoke2k19@gmail.com"><h3>evoke2k19@gmail.com</h3></a>
+                    <a href="mailto:evoke2k19@gmail.com"><h3>evoke2k19@gmail.com</h3></a>                    
                 </div>
             </div>
+            
+                                
         </div>
     </div>
 
@@ -102,21 +105,23 @@ In the present era where the rising concern regarding environmental protection a
             </h2>
             <p class="tag">THE DAWN OF GREEN INTELLIGENCE</p>
             <p class="date">1-3 February</p><br>
-            <h1>Coming Soon....</h1>
+            &nbsp;
+            <!-- <h1>Coming Soon....</h1> -->
         </div>
 
         
     </div>
-  <!--   <nav class="main-nav">
+    <br>
+    <nav class="main-nav">
         <ul>
             <li><a href="events/" target="_blank"><h3>Events</h3></a></li>
             <li><a href="workshop/" target="_blank"><h3>Workshops</h3></a></li>
             <li><a href="hackathon/" target="_blank"><h3>Hackathon</h3></a></li>
-            <li><a href="#" target="_blank"><h3>Cells</h3></a></li>
-            <li><a href="compitions/" target="_blank"><h3>Competition</h3></a></li>
-             <li><a href="talks/" target="_blank"><h3>Talks</h3></a></li>
+            <li><a target="_blank"><h3>Cells</h3></a></li>
+            <li><a href="competition/" target="_blank"><h3>Competitions</h3></a></li>
+            <li><a target="_blank"><h3>Talks</h3></a></li>
         </ul>
-    </nav> -->
+    </nav>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.slim.min.js'></script>
     <script src="js/anime.js"></script>
     <script src="js/menu.js"></script>
