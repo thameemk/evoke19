@@ -46,7 +46,7 @@ function redirect_path($theme,$response,$type=NULL){
 
 function fileValidity($size,$extension){
     $size = (floatval($size)/(1024*1024));
-    if($size<2){
+    if($size<20){
         if($extension=='pdf'){
             return 1;
         }
@@ -72,7 +72,7 @@ if($conn){
         $instNameLeader = mysqli_real_escape_string($conn,$_POST['instNameLeader']);
         $emailLeader = mysqli_real_escape_string($conn,$_POST['emailLeader']);
         $contactLeader = mysqli_real_escape_string($conn,$_POST['contactLeader']);
-        echo $contactLeader;
+        // echo $contactLeader;
         $fullNameMember1 = mysqli_real_escape_string($conn,$_POST['fullNameMember1']);
         $instNameMember1 = mysqli_real_escape_string($conn,$_POST['instNameMember1']);
         // $emailNameMember1 = mysqli_real_escape_string($conn,$_POST['emailNameMember1']);
@@ -103,8 +103,8 @@ if($conn){
                     if(move_uploaded_file($_FILES['abstractForm']['tmp_name'],'abstract/'.$emailLeader.$theme.'.'.strtolower(pathinfo(basename($_FILES["abstractForm"]["name"]),PATHINFO_EXTENSION)))){
                         
                         $theRealFileName = 'https://www.evoke19.com/competition/api/abstract/'.$emailLeader.$theme.'.'.strtolower(pathinfo(basename($_FILES["abstractForm"]["name"]),PATHINFO_EXTENSION));
-                        echo $contactLeader;
-                        $sql="insert into userinfo (fullname,institution, emailid, contactnum, theme, pathtofile) values('$leaderName','$instNameLeader','$emailLeader','$contactLeader','$theme','$theRealFileName')";
+                        // echo $contactLeader;
+                        $sql="insert into userinfo (fullname,institution, emailid, contactnum1, theme, pathtofile) values('$leaderName','$instNameLeader','$emailLeader','$contactLeader','$theme','$theRealFileName')";
                         $result=$conn->query($sql);
                         if($result){
                             $sql="select userid from userinfo where fullname='$leaderName' and emailid='$emailLeader' and theme='$theme'";
@@ -115,19 +115,19 @@ if($conn){
                                     $userid=$result['userid'];
 
                                     if(!empty($fullNameMember1) and !empty($instNameMember1)){
-                                        $sql="insert into userinfo (fullname,institution, emailid, contactnum, leaderid, theme, pathtofile) values('$fullNameMember1','$instNameMember1','$emailLeader','$contactLeader',$userid,'$theme', '$theRealFileName')";
+                                        $sql="insert into userinfo (fullname,institution, emailid, contactnum1, leaderid, theme, pathtofile) values('$fullNameMember1','$instNameMember1','$emailLeader','$contactLeader',$userid,'$theme', '$theRealFileName')";
                                         $result=$conn->query($sql);
 
 
                                         if(!empty($fullNameMember2) and !empty($instNameMember2)){
-                                            $sql="insert into userinfo (fullname,institution, emailid, contactnum, leaderid, theme, pathtofile) values('$fullNameMember2','$instNameMember2','$emailLeader','$contactLeader',$userid, '$theme', '$theRealFileName')";
+                                            $sql="insert into userinfo (fullname,institution, emailid, contactnum1, leaderid, theme, pathtofile) values('$fullNameMember2','$instNameMember2','$emailLeader','$contactLeader',$userid, '$theme', '$theRealFileName')";
                                             $result=$conn->query($sql);
 
 
                                             echo "reached flag1";
 
                                             if(!empty($fullNameMember3) and !empty($instNameMember3)){
-                                                $sql="insert into userinfo (fullname,institution, emailid, contactnum, leaderid,theme, pathtofile) values('$fullNameMember3','$instNameMember3','$emailLeader','$contactLeader',$userid, '$theme', '$theRealFileName')";
+                                                $sql="insert into userinfo (fullname,institution, emailid, contactnum1, leaderid,theme, pathtofile) values('$fullNameMember3','$instNameMember3','$emailLeader','$contactLeader',$userid, '$theme', '$theRealFileName')";
                                                 $result=$conn->query($sql);
                                             }
                                             else{

@@ -32,7 +32,7 @@ if($conn){
                     <td>';echo $row['fullname'];echo '</td>
                     <td>';echo $row['institution'];echo '</td>
                     <td>';echo $row['emailid'];echo '</td>
-                    <td>';echo $row['contactnum'];echo '</td>
+                    <td>';echo $row['contactnum1'];echo '</td>
                     <td><a href="';echo $row['pathtofile'];echo '">Abstract File</a></td>
                     <td>';echo $row['theme'];echo '</td>
                 </tr>

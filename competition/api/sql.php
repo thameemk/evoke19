@@ -5,13 +5,15 @@ $sql = "CREATE TABLE userinfo (
     fullname VARCHAR(50),
     institution VARCHAR(150),
     emailid VARCHAR(50),
-    contactnum INT(20),
+    contactnum1 INT(20),
     pathtofile TEXT,
     leaderid INT(255),
     theme VARCHAR(50),
     PRIMARY KEY(userid)
 )";
 
+
+// $sql = "DROP TABLE `userinfo`";
 
 $host='localhost:3306';
 $username='iedctkmc_evokeUR';
