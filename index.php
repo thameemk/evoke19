@@ -51,7 +51,7 @@
         <div class="overlay_content">
             <div class="about">
                 <div class="container">
-                    <p class="about_evoke"><h3>TKM College of Engineering, Kollam, Kerala presents <font style="font-weight: bold;">'EVOKE 2019: The dawn of green intelligence,</font> conducted by IEDC and IEEE TKMCE.
+                    <p class="about_evoke"><h3>TKM College of Engineering, Kollam, Kerala presents <font style="font-weight: bold;">'EVOKE'19: The dawn of green intelligence,</font> conducted by IEDC and IEEE TKMCE.
 In the present era where the rising concern regarding environmental protection and the need for smart technologies explosively overlap, EVOKE'19 brings out the technical rich minds to the stage.</h3>
                     </p>
                 </div>
