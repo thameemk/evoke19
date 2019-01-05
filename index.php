@@ -34,7 +34,7 @@
         <div class="social_nav">
             <a class="social_icon" href="https://www.facebook.com/evoke19/" target="_blank"><img src="img/social_icons/facebook.svg"
                     alt=""></a>
-            <a class="social_icon" href="https://instagram.com/evoke_19" target="_blank"><img src="img/social_icons/instagram.svg"
+            <a class="social_icon" href="https://instagram.com/evoke__19" target="_blank"><img src="img/social_icons/instagram.svg"
                     alt=""></a>
             <!-- <a class="social_icon" href="#" target="_blank"><img src="img/social_icons/youtube.svg"
                     alt=""></a> -->
