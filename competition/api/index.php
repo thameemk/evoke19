@@ -124,7 +124,7 @@ if($conn){
                                             $result=$conn->query($sql);
 
 
-                                            echo "reached flag1";
+                                           
 
                                             if(!empty($fullNameMember3) and !empty($instNameMember3)){
                                                 $sql="insert into userinfo (fullname,institution, emailid, contactnum1, leaderid,theme, pathtofile) values('$fullNameMember3','$instNameMember3','$emailLeader','$contactLeader',$userid, '$theme', '$theRealFileName')";
