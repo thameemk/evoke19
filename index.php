@@ -117,7 +117,7 @@ In the present era where the rising concern regarding environmental protection a
             <li><a href="events/" target="_blank"><h3>Events</h3></a></li>
             <li><a href="workshop/" target="_blank"><h3>Workshops</h3></a></li>
             <li><a href="hackathon/" target="_blank"><h3>Hackathon</h3></a></li>
-            <li><a target="_blank"><h3>Cells</h3></a></li>
+            <li><a href="cells/" target="_blank"><h3>Cells</h3></a></li>
             <li><a href="competition/" target="_blank"><h3>Competitions</h3></a></li>
             <li><a target="_blank"><h3>Talks</h3></a></li>
         </ul>
