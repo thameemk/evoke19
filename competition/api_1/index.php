@@ -19,7 +19,7 @@ $conn = mysqli_connect($host,$username,$password,$dbase);
 
 function redirect_path($theme,$response,$type=NULL){
     $pathToFile='https://www.evoke19.com/competition/';
-    if($theme=='project_1'){
+    if($theme=='paper_2'){
         $page='project_contest.php';
     }
     // else if($theme=='Disaster Management'){

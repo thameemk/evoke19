@@ -13,7 +13,7 @@ $sql = "CREATE TABLE project_pre (
 )";
 
 
-//$sql = "DROP TABLE `userinfo`";
+//$sql = "DROP TABLE `project_pre`";
 
 $host='localhost:3306';
 $username='iedctkmc_evokeUR';

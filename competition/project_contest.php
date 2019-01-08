@@ -106,7 +106,7 @@
                                 <button  type="button" name="submitAbstract" class="btn btn-sm" style="width: 100%;"  id="uploadAbstractPseudo">Upload Abstract</button>
                                 <div class="row btn-group-div">
                                     <button type="button" name="addMoreMembers" class="btn btn-sm" id="addmoreMembersBtn"><i class="fa fa-plus-square-o" aria-hidden="true"></i>Add Member</button>
-                                    <input type="hidden" name="theme" value="paper_1">
+                                    <input type="hidden" name="theme" value="paper_2">
                                     <button type="submit" name="submitForm" class="btn btn-sm ">Register</button>
                                 </div>
                             </form>
