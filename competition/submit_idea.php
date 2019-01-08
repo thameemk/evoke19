@@ -4,7 +4,7 @@
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Submit Idea | 'Evoke 19</title>
+	<title>Ideathon | 'Evoke 19</title>
 	
 	<link rel="shortcut icon" href="favicon.ico">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
@@ -66,7 +66,7 @@
                                             print('<div class="form-control response error">File size exceeds the limit. Size should be less than 2MB.</div>');
                                         }
                                         else if($type=='error_file_type'){
-                                            print('<div class="form-control response error">File format is not valid.</div>');
+                                            print('<div class="form-control response error">File format is not valid. Upload PDF Only </div>');
                                         }
                                         else if($type=='error_file_upload'){
                                             print('<div class="form-control response error">Trouble in uploading file.</div>');
@@ -81,9 +81,6 @@
                                 <input type="text" name="instNameLeader" class="form-control" placeholder="Name of the Institution/Organization">
                                 <input type="email" name="emailLeader" class="form-control" placeholder="Email Id">
                                 <input type="tel" name="contactLeader" class="form-control" placeholder="Contact Number">
-                                <textarea  name="aboutIdea" class="textarea" placeholder="About the idea (200 words)"></textarea>
-                                <textarea  name="implimentIdea" class="textarea" placeholder="Implementation  (200 words)"></textarea>
-                                <textarea  name="releIdea" class="textarea"  placeholder="Relevance and feasibility  (100 words)"></textarea>
                                 <div class="row member-section">
                                     <div class="form-group-div" style="display:none;" id="member_1">
                                         <div>Team Member<a id="member_1_close" class="close-href">Close</a></div>
@@ -105,8 +102,9 @@
                                     </div>
                                     
                                 </div>
-                                
-                                
+                                <p><b>Format :</b><br>About idea (200 words) <br> Implementation (200 words) <br>Relevance and feasibility (100 words) <br>(Only PDF format is supported ) </p>
+                                <input type="file" name="abstractForm" class="btn btn-sm" style="display:none;" value="Upload Abstract" id="uploadAbstract">
+                                <button  type="button" name="submitAbstract" class="btn btn-sm" style="width: 100%;"  id="uploadAbstractPseudo">Upload Idea</button>
                                 <div class="row btn-group-div">
                                     <button type="button" name="addMoreMembers" class="btn btn-sm" id="addmoreMembersBtn"><i class="fa fa-plus-square-o" aria-hidden="true"></i>Add Member</button>
                                     <input type="hidden" name="theme" value="paper_3">
@@ -269,16 +267,6 @@
             .center-text{
             margin: 10px;
             text-align: center;
-            }
-            .textarea {
-            width: 100%;
-            height: 150px;
-            padding: 12px 20px;
-            box-sizing: border-box;
-            border: 2px solid #ccc;
-            border-radius: 4px;
-            background-color: #f8f8f8;
-            resize: none;
             }
             .row div{
             /*                    border: 1px solid red;*/

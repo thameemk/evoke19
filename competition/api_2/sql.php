@@ -6,11 +6,9 @@ $sql = "CREATE TABLE idea_sub (
     institution VARCHAR(150),
     emailid VARCHAR(50),
     contactnum1 VARCHAR(100),
+    pathtofile TEXT,
     leaderid INT(255),
     theme VARCHAR(50),
-    aboutIdea VARCHAR(1000),
-    implementIdea VARCHAR(1000),
-    releIdea VARCHAR(500),
     PRIMARY KEY(userid)
 )";
 

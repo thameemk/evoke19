@@ -72,10 +72,6 @@ if($conn){
         $instNameLeader = mysqli_real_escape_string($conn,$_POST['instNameLeader']);
         $emailLeader = mysqli_real_escape_string($conn,$_POST['emailLeader']);
         $contactLeader = mysqli_real_escape_string($conn,$_POST['contactLeader']);
-        $aboutIdea = mysqli_real_escape_string($conn,$_POST['aboutIdea']);
-        $implimentIdea = mysqli_real_escape_string($conn,$_POST['implimentIdea']);
-        $releIdea = mysqli_real_escape_string($conn,$_POST['releIdea']);
-
         // echo $contactLeader;
         $fullNameMember1 = mysqli_real_escape_string($conn,$_POST['fullNameMember1']);
         $instNameMember1 = mysqli_real_escape_string($conn,$_POST['instNameMember1']);
@@ -87,7 +83,7 @@ if($conn){
         $instNameMember3 = mysqli_real_escape_string($conn,$_POST['instNameMember3']);
         // $emailNameMember3 = mysqli_real_escape_string($conn,$_POST['emailNameMember3']);
         
-        if(empty($leaderName) || empty($instNameLeader) || empty($emailLeader) || empty($releIdea) || empty($aboutIdea) || empty($implimentIdea) || empty($contactLeader) || empty($_FILES['abstractForm']['name'])){
+        if(empty($leaderName) || empty($instNameLeader) || empty($emailLeader) || empty($contactLeader) || empty($_FILES['abstractForm']['name'])){
             redirect_path($theme,'error','fill_all');
         }
         else{
@@ -106,7 +102,7 @@ if($conn){
                 if(mysqli_num_rows(mysqli_query($conn,$sql))==0){                
                     if(move_uploaded_file($_FILES['abstractForm']['tmp_name'],'abstract/'.$emailLeader.$theme.'.'.strtolower(pathinfo(basename($_FILES["abstractForm"]["name"]),PATHINFO_EXTENSION)))){
                         
-                        $theRealFileName = 'https://www.evoke19.com/competition/api_1/abstract/'.$emailLeader.$theme.'.'.strtolower(pathinfo(basename($_FILES["abstractForm"]["name"]),PATHINFO_EXTENSION));
+                        $theRealFileName = 'https://www.evoke19.com/competition/api_2/abstract/'.$emailLeader.$theme.'.'.strtolower(pathinfo(basename($_FILES["abstractForm"]["name"]),PATHINFO_EXTENSION));
                         // echo $contactLeader;
                         $sql="insert into idea_sub (fullname,institution, emailid, contactnum1, theme, pathtofile) values('$leaderName','$instNameLeader','$emailLeader','$contactLeader','$theme','$theRealFileName')";
                         $result=$conn->query($sql);

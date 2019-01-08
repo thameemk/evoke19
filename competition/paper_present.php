@@ -66,7 +66,7 @@
                                             print('<div class="form-control response error">File size exceeds the limit. Size should be less than 2MB.</div>');
                                         }
                                         else if($type=='error_file_type'){
-                                            print('<div class="form-control response error">File format is not valid.</div>');
+                                            print('<div class="form-control response error">File format is not valid. Upload PDF Only </div>');
                                         }
                                         else if($type=='error_file_upload'){
                                             print('<div class="form-control response error">Trouble in uploading file.</div>');
@@ -102,6 +102,7 @@
                                     </div>
                                     
                                 </div>
+                                <p>Only PDF format is supported</p>
                                 <input type="file" name="abstractForm" class="btn btn-sm" style="display:none;" value="Upload Abstract" id="uploadAbstract">
                                 <button  type="button" name="submitAbstract" class="btn btn-sm" style="width: 100%;"  id="uploadAbstractPseudo">Upload Abstract</button>
                                 <div class="row btn-group-div">
