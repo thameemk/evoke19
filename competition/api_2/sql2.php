@@ -1,6 +1,6 @@
 <?php
 error_reporting(0);
-$sql = "select * from project_pre";
+$sql = "select * from idea_sub";
 
 
 
@@ -23,7 +23,9 @@ if($conn){
                 <th>Institution</th>
                 <th>Email-id</th>
                 <th>Contact Number</th>
-                <th>Abstract File</th>
+                <th>About Idea</th>
+                <th>Implimentation </th>
+                <th>Relevence</th>
                 <th>Theme</th>
             </tr>';
         while($row = $res->fetch_assoc()){
@@ -33,7 +35,9 @@ if($conn){
                     <td>';echo $row['institution'];echo '</td>
                     <td>';echo $row['emailid'];echo '</td>
                     <td>';echo $row['contactnum1'];echo '</td>
-                    <td><a href="';echo $row['pathtofile'];echo '">Abstract File</a></td>
+                    <td>';echo $row['aboutIdea'];echo '</td>
+                    <td>';echo $row['implementIdea'];echo '</td>
+                    <td>';echo $row['releIdea'];echo '</td>
                     <td>';echo $row['theme'];echo '</td>
                 </tr>
             ';

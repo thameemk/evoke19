@@ -87,7 +87,7 @@ if($conn){
         $instNameMember3 = mysqli_real_escape_string($conn,$_POST['instNameMember3']);
         // $emailNameMember3 = mysqli_real_escape_string($conn,$_POST['emailNameMember3']);
         
-        if(empty($leaderName) || empty($instNameLeader) || empty($emailLeader) empty($releIdea) || empty($aboutIdea) || empty($implimentIdea) || empty($contactLeader) || empty($_FILES['abstractForm']['name'])){
+        if(empty($leaderName) || empty($instNameLeader) || empty($emailLeader) || empty($releIdea) || empty($aboutIdea) || empty($implimentIdea) || empty($contactLeader) || empty($_FILES['abstractForm']['name'])){
             redirect_path($theme,'error','fill_all');
         }
         else{
@@ -102,16 +102,16 @@ if($conn){
                 redirect_path($theme,'error','error_file_type');
             }
             else if($valid_result==1){
-                $sql="SELECT * FROM project_pre WHERE emailid='$emailLeader' AND theme='$theme'";
+                $sql="SELECT * FROM idea_sub WHERE emailid='$emailLeader' AND theme='$theme'";
                 if(mysqli_num_rows(mysqli_query($conn,$sql))==0){                
                     if(move_uploaded_file($_FILES['abstractForm']['tmp_name'],'abstract/'.$emailLeader.$theme.'.'.strtolower(pathinfo(basename($_FILES["abstractForm"]["name"]),PATHINFO_EXTENSION)))){
                         
                         $theRealFileName = 'https://www.evoke19.com/competition/api_1/abstract/'.$emailLeader.$theme.'.'.strtolower(pathinfo(basename($_FILES["abstractForm"]["name"]),PATHINFO_EXTENSION));
                         // echo $contactLeader;
-                        $sql="insert into project_pre (fullname,institution, emailid, contactnum1, theme, pathtofile) values('$leaderName','$instNameLeader','$emailLeader','$contactLeader','$theme','$theRealFileName')";
+                        $sql="insert into idea_sub (fullname,institution, emailid, contactnum1, theme, pathtofile) values('$leaderName','$instNameLeader','$emailLeader','$contactLeader','$theme','$theRealFileName')";
                         $result=$conn->query($sql);
                         if($result){
-                            $sql="select userid from project_pre where fullname='$leaderName' and emailid='$emailLeader' and theme='$theme'";
+                            $sql="select userid from idea_sub where fullname='$leaderName' and emailid='$emailLeader' and theme='$theme'";
                             $result=$conn->query($sql);
                             if($result){
                                 if(mysqli_num_rows($result)==1){
@@ -119,19 +119,19 @@ if($conn){
                                     $userid=$result['userid'];
 
                                     if(!empty($fullNameMember1) and !empty($instNameMember1)){
-                                        $sql="insert into project_pre (fullname,institution, emailid, contactnum1, leaderid, theme, pathtofile) values('$fullNameMember1','$instNameMember1','$emailLeader','$contactLeader',$userid,'$theme', '$theRealFileName')";
+                                        $sql="insert into idea_sub (fullname,institution, emailid, contactnum1, leaderid, theme, pathtofile) values('$fullNameMember1','$instNameMember1','$emailLeader','$contactLeader',$userid,'$theme', '$theRealFileName')";
                                         $result=$conn->query($sql);
 
 
                                         if(!empty($fullNameMember2) and !empty($instNameMember2)){
-                                            $sql="insert into project_pre (fullname,institution, emailid, contactnum1, leaderid, theme, pathtofile) values('$fullNameMember2','$instNameMember2','$emailLeader','$contactLeader',$userid, '$theme', '$theRealFileName')";
+                                            $sql="insert into idea_sub (fullname,institution, emailid, contactnum1, leaderid, theme, pathtofile) values('$fullNameMember2','$instNameMember2','$emailLeader','$contactLeader',$userid, '$theme', '$theRealFileName')";
                                             $result=$conn->query($sql);
 
 
                                            
 
                                             if(!empty($fullNameMember3) and !empty($instNameMember3)){
-                                                $sql="insert into project_pre (fullname,institution, emailid, contactnum1, leaderid,theme, pathtofile) values('$fullNameMember3','$instNameMember3','$emailLeader','$contactLeader',$userid, '$theme', '$theRealFileName')";
+                                                $sql="insert into idea_sub (fullname,institution, emailid, contactnum1, leaderid,theme, pathtofile) values('$fullNameMember3','$instNameMember3','$emailLeader','$contactLeader',$userid, '$theme', '$theRealFileName')";
                                                 $result=$conn->query($sql);
                                                 redirect_path($theme,'success');
                                             }
@@ -151,7 +151,7 @@ if($conn){
                                 else{
                                     $result=mysqli_fetch_assoc($result);
                                     $id_ = $result['userid'];
-                                    $sql="delete from project_pre where theme='$theme' and fullname='$leaderName' and emailid='$emailLeader' and userid <>$id_";
+                                    $sql="delete from idea_sub where theme='$theme' and fullname='$leaderName' and emailid='$emailLeader' and userid <>$id_";
                                     mysqli_query($conn,$sql);
 
                                     echo "already exists";
