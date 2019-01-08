@@ -1,6 +1,6 @@
 <?php
 
-$sql = "CREATE TABLE userinfo (
+$sql = "CREATE TABLE project_pre (
     userid INT(255) NOT NULL AUTO_INCREMENT,
     fullname VARCHAR(50),
     institution VARCHAR(150),
