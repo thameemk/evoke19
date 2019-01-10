@@ -104,7 +104,7 @@
                                 </div>
                                 <p>Only PDF format is supported</p>
                                 <input type="file" name="abstractForm" class="btn btn-sm" style="display:none;" value="Upload Abstract" id="uploadAbstract">
-                                <button  type="button" name="submitAbstract" class="btn btn-sm" style="width: 100%;"  id="uploadAbstractPseudo">Upload Abstract</button>
+                                <button  type="button" name="submitAbstract" class="btn btn-sm" style="width: 100%;"  id="uploadAbstractPseudo">Upload Paper</button>
                                 <div class="row btn-group-div">
                                     <button type="button" name="addMoreMembers" class="btn btn-sm" id="addmoreMembersBtn"><i class="fa fa-plus-square-o" aria-hidden="true"></i>Add Member</button>
                                     <input type="hidden" name="theme" value="paper_1">
