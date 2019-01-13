@@ -119,7 +119,7 @@ In the present era where the rising concern regarding environmental protection a
             <li><a href="hackathon/" target="_blank"><h3>Hackathon</h3></a></li>
             <li><a href="cells/" target="_blank"><h3>Cells</h3></a></li>
             <li><a href="competition/" target="_blank"><h3>Competitions</h3></a></li>
-            <li><a target="_blank"><h3>Talks</h3></a></li>
+            <li><a href="talks/" target="_blank"><h3>Talks</h3></a></li>
         </ul>
     </nav>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.slim.min.js'></script>
