@@ -34,8 +34,20 @@
                 <b>Lecture Series</b></h1>
 		</header>
 		<div class="content">
-			<!-- trianglify pattern container -->
-			<div class="pattern pattern--hidden"></div>			
+		<div class="pattern pattern--hidden"></div>
+		<div class="wrapper">
+                <div class="card" style="width: 20rem" data-toggle="modal" data-target="#exampleModal2">
+                    <div class="card-header card-header-warning" style="padding: 0px;">
+                        <img src="img/reg.gif" class="card-img-top" />
+                	</div>
+				</div>	   
+		</div>
+		<div class="wrapper">
+                <div class="card" style="width: 20rem" data-toggle="modal" data-target="#exampleModal2">
+                    <div class="card-header card-header-warning" style="padding: 0px;">
+                        <img src="img/reg.gif" class="card-img-top" />
+                    </div>                    
+                </div>			
         </div>
     </div>
 	<script src="js/core/jquery.min.js" type="text/javascript"></script>
