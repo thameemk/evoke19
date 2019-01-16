@@ -1,14 +1,23 @@
-<html>
+<html lang="en">
 <head>
 	<title>Live | Evoke'19</title>
+	<meta charset="utf-8">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script src="js/chat.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<style type="text/css">
   body{
     background-image: url('https://i.imgur.com/h1XimvD.jpg');
-
+		width: 100%;
+		height: 100%;
   }
   .custom1{
     display: block;
@@ -33,6 +42,7 @@
 	</style>
 </head>
 <body >
+	<div class="container">
 <a href="index.php"><img class="custom1" src="https://i.imgur.com/4UEClcA.png"></a>
 <div class="box1">
 
@@ -41,6 +51,6 @@
 	<input id="input" type="text" style="width: 100%;">
     <!-- <button type="button" class="custom2">send</button>  -->
 </div>
-
+</div>
 </body>
 </html>
