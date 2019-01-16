@@ -4,7 +4,7 @@
   $(document).ready(function() {
     $("#input").keypress(function(event) {
       if (event.which == 13) {
-        $('.chatBox').append('<span class="userInput">' + 'me:'+ $('input').val() + '</span><br><br>')
+        $('.chatBox').append('<span class="userInput">' + 'Me:'+'<br>'+ $('input').val() + '</span><br><br>')
         event.preventDefault();
         let query  = $('input').val()
         $('input').val('')
@@ -30,5 +30,5 @@
     });
   }
   function setResponse(val) {
-    $(".chatBox").append('<span class="responseData">'+ 'bot:' + val.result.fulfillment.speech + '</span><br><br>');
+    $(".chatBox").append('<span class="responseData">'+ 'Jessie:'+'<br>' + val.result.fulfillment.speech + '</span><br><br>');
   }
