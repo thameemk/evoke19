@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Evoke '19</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-   
+
+
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
 
-   
+
 
 </head>
 
@@ -38,16 +38,17 @@
                     alt=""></a>
             <!-- <a class="social_icon" href="#" target="_blank"><img src="img/social_icons/youtube.svg"
                     alt=""></a> -->
-            
-            
-    
+
+
+
         </div>
         <a href="index.php">Home</a>
         <a id="about">About Us</a>
-       
-        <a id="contact">Contact Us</a>
 
-         
+        <a id="contact">Contact Us</a>
+        <a href="live-chat.php">Live Chat</a>
+
+
         <div class="overlay_content">
             <div class="about">
                 <div class="container">
@@ -63,7 +64,7 @@ In the present era where the rising concern regarding environmental protection a
                             <div class="contact_card">
                                 <center>
                                 <!-- <img src="contact/neethu.jpg" alt=""> -->
-                                
+
                                 <h3>Neethu EV</h3>
                                 <h3>CEO IEDC TKMCE</h3>
                                 <h3>95446 95845</h3>
@@ -77,15 +78,15 @@ In the present era where the rising concern regarding environmental protection a
                                 <h3>Harry Paul</h3>
                                     <h3>Chairman IEEE SB TKMCE</h3>
                                     <h3>94977 04887</h3>
-                                </center>    
+                                </center>
                             </div>
                         </div>
                     </div>
-                    <a href="mailto:evoke2k19@gmail.com"><h3>evoke2k19@gmail.com</h3></a>                    
+                    <a href="mailto:evoke2k19@gmail.com"><h3>evoke2k19@gmail.com</h3></a>
                 </div>
             </div>
-            
-                                
+
+
         </div>
     </div>
 
@@ -109,7 +110,7 @@ In the present era where the rising concern regarding environmental protection a
             <!-- <h1>Coming Soon....</h1> -->
         </div>
 
-        
+
     </div>
     <br>
     <nav class="main-nav">
