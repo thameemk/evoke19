@@ -2,7 +2,8 @@
 .buttonContainer{
 	margin: auto;
 	text-align: center;
-	padding-bottom: 5%;
+	padding-top: 5vh;
+	z-index: 999;
 }
 
 

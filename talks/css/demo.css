@@ -91,12 +91,12 @@ a:focus {
 
 /* Header */
 .codrops-header {
-	position: absolute;
+	/* position: absolute; */
 	width: 100%;
 	padding: 2em 1em;
 	text-align: center;
-	z-index: 999;
-	pointer-events: none;
+	z-index: 998;
+	/* pointer-events: none; */
 }
 
 .codrops-header h1 {
@@ -188,7 +188,7 @@ a:focus {
 /* Content */
 
 .content {
-	padding: 10em 0 4em;
+	padding: 2em 0 4em;
 	display:flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
