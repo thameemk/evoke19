@@ -5,6 +5,7 @@
 	padding-top: 5vh;
 	z-index: 999;
 	width: 10vw;
+	pointer-events: auto;
 }
 
 
