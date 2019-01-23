@@ -43,11 +43,7 @@
 										<!-- <a style="color:black;" href="./Job Fair.pdf"><b><h4> Click here for details of Companies</h4></b></a><br> -->
 									<b style="color:#F55003;">	Guidelines</b>
 <pre>
-> The list of all the companies participating in the Internship/Job Fair is given below <br>	AimanTechnologies Pvt Ltd<br>
-	EventsDo<br>
-	Four Nxt Technologies<br>
-	Quadance Technologies<br>
-	Yourdux India Pvt Ltd<br><a style="color:#0383F5;font-weight:bold;" href="./Job Fair.pdf"><b>Foe more info click here</b></a>
+> The list of all the companies participating in the Internship/Job Fair is <a style="color:#0383F5;font-weight:bold;" href="./Job Fair.pdf"><b>given here.</b></a>
 > An applicant can apply to any/all of the companies by selecting the respective options.
 > After filling the required details, the applicant must register and pay the application fee.
 > Once the fee payment is completed, don't for get to upload your Résumé in pdf format.
@@ -57,7 +53,7 @@
                     <!-- <h4>Register Now</h4><br> -->
                     <div class="row">
                         <div class="col-sm-6">
-                            <form action="api_4/index.php" method="post" class="form-class" enctype="multipart/form-data">
+                            <form action="api_5/index.php" method="post" class="form-class" enctype="multipart/form-data">
                                 <?php
                                 if(isset($_GET['response'])){
                                     $response=$_GET['response'];
@@ -94,14 +90,13 @@
                                 <input type="text" name="instNameLeader" class="form-control" placeholder="Name of the Institution">
                                 <input type="email" name="emailLeader" class="form-control" placeholder="Email Id">
                                 <input type="tel" name="contactLeader" class="form-control" placeholder="Contact Number">
-
-																<input type="text" name="company" class="form-control" placeholder="Companies from above list ">
-																<!-- <b>Select Companies</b><br> -->
-																<!-- <input type="checkbox" name="comapny" value="AimanTechnologies">AimanTechnologies Pvt Ltd<br>
-																<input type="checkbox" name="comapny" value="EventsDo">EventsDo<br>
-																<input type="checkbox" name="comapny" value="FourNxtTechnologies">Four Nxt Technologies<br>
-																<input type="checkbox" name="comapny" value="QuadanceTechnologies">Quadance Technologies<br>
-																<input type="checkbox" name="comapny" value="YourduxIndiaPvtLtd">Yourdux India Pvt Ltd<br> -->
+																<!-- <input type="text" name="company" class="form-control" placeholder="Companies from above list "> -->
+																<b>Select Companies</b><br>
+																<input type="checkbox" name="comapny[]" value="AimanTechnologies">AimanTechnologies Pvt Ltd<br>
+																<input type="checkbox" name="comapny[]" value="EventsDo">EventsDo<br>
+																<input type="checkbox" name="comapny[]" value="FourNxtTechnologies">Four Nxt Technologies<br>
+																<input type="checkbox" name="comapny[]" value="QuadanceTechnologies">Quadance Technologies<br>
+																<input type="checkbox" name="comapny[]" value="YourduxIndiaPvtLtd">Yourdux India Pvt Ltd<br>
 
 
 
@@ -110,7 +105,7 @@
                                 <button  type="button" name="submitAbstract" class="btn btn-sm" style="width: 100%;"  id="uploadAbstractPseudo">Upload Resume</button>
                                 <div class="row btn-group-div">
                                     <!-- <button type="button" name="addMoreMembers" class="btn btn-sm" id="addmoreMembersBtn"><i class="fa fa-plus-square-o" aria-hidden="true"></i>Add Member</button> -->
-                                    <input type="hidden" name="theme" value="internship">
+                                    <input type="hidden" name="theme" value="intr">
                                     <button type="submit" name="submitForm" class="btn btn-sm " >Register</button>
                                 </div>
                             </form>
