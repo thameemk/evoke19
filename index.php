@@ -104,16 +104,13 @@ In the present era where the rising concern regarding environmental protection a
                 <p>1</p>
                 <p>9</p>
             </h2>
-            <p class="tag">THE DAWN OF GREEN INTELLIGENCE</p>
-            <p class="date">1-3 February</p><br>
-            &nbsp;
-            <!-- <h1>Coming Soon....</h1> -->
+            <b><p class="tag">THE DAWN OF GREEN INTELLIGENCE</p></b>
+            <p class="date">1-3 February</p><br><br><br><br><br><br><br><br><br>
         </div>
 
-
     </div>
-    <br>
     <nav class="main-nav">
+      <center> <a href="/contents/Event-Schedule.pdf"> <b>  <p class="tag">*** Schedule ***</p></b></a></center>
         <ul>
             <li><a href="events/" target="_blank"><h3>Events</h3></a></li>
             <li><a href="workshop/" target="_blank"><h3>Workshops</h3></a></li>
