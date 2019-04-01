@@ -6,6 +6,8 @@
     <title>Evoke '19</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
 </head>
 
@@ -39,6 +41,7 @@
     </div>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.slim.min.js'></script>
     <script src="js/anime.js"></script>
+    <script src="js/menu.js"></script>
     <script src="js/main.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131493860-1"></script>
