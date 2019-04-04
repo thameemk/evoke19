@@ -4,8 +4,9 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Evoke'19 | National Level Techno-Cultural Fest of TKM</title>
+  <title>Evoke'19</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="TKM College of Engineering, Kollam, Kerala presents 'EVOKE'19: The dawn of green intelligence, conducted by IEDC and IEEE TKMCE. In the present era where the rising concern regarding environmental protection and the need for smart technologies explosively overlap, EVOKE'19 brings out the technical rich minds to the stage.">
   <link rel="shortcut icon" href="logo.png">
   <style>
     body {
