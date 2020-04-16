@@ -4,9 +4,9 @@
 
 //Configurations
 $host='localhost:3306';
-$username='iedctkmc_evokeUR';
-$password='Ev0k#2k19';
-$dbase='iedctkmc_evokeDB';
+$username='';
+$password='';
+$dbase='';
 
 
 
