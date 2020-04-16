@@ -1,6 +1,10 @@
 # ___Evoke'19___
 ## ___🌟🌟🌟 Website of Evoke'19 - TKMCE Techno-cultural fest organaised by [IEDC TKMCE](//iedctkmce.com) & [IEEE SB TKMCE](//ieeesbtkmce.in) 🌟🌟🌟___
 
+```diff
+- Note: This is not an optimized version of website
+```
+
 #### ___The WebGl fluid simulation used in this website is an open source code.___
 >https://github.com/PavelDoGreat/WebGL-Fluid-Simulation
 
